@@ -23,3 +23,22 @@ describe "fizzbuzz" do
     expect(fizz_4).to eq(nil)
   end
 end
+
+def fizzbuzz(number)
+  number = gets.strip
+  if number % 3 == true 
+    return "Fizz"
+  end
+  elsif number % 5 == true 
+    return "Buzz"
+  end 
+  elsif number % 3 == true && number % 5 == true 
+    return "FizzBuzz"  
+  end
+  else 
+    return "nil"   
+  end
+end 
+
+fizzbuzz(15) 
+  
