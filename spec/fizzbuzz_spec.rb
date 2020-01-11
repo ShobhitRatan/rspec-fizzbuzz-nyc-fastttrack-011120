@@ -1,5 +1,5 @@
 require_relative './spec_helper.rb'
-# We are missing a 'require_relative' here. Check README.md for instructions and an explanation! 
+# We are missing a 'require_relative' here. Check README.md for instructions and an explanation!
 
 describe "fizzbuzz" do
   it 'returns "Fizz" when the number is divisible by 3' do
@@ -26,19 +26,19 @@ end
 
 def fizzbuzz(number)
   number = gets.strip
-  if number % 3 == true 
+  if number % 3 == true
     return "Fizz"
   end
-  elsif number % 5 == true 
+  elsif number % 5 == true
     return "Buzz"
-  end 
-  elsif number % 3 == true && number % 5 == true 
-    return "FizzBuzz"  
   end
-  else 
-    return "nil"   
+  elsif number % 3 == true && number % 5 == true
+    return "FizzBuzz"
   end
-end 
+  else
+    return "nil"
+  end
+end
 
-fizzbuzz(15) 
+fizzbuzz(15)
   
